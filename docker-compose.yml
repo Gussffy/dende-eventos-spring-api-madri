@@ -29,7 +29,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/dende_eventos?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/dende_eventos?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: dende_user
       SPRING_DATASOURCE_PASSWORD: dende_pass
       SPRING_JPA_HIBERNATE_DDL_AUTO: validate
