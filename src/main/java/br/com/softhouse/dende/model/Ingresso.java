@@ -35,10 +35,10 @@ public class Ingresso {
     @Column(name = "data_compra", nullable = false)
     private LocalDateTime dataCompra;
 
-    @Column(name = "valor_pago", nullable = false)
+    @Column(columnDefinition = "DECIMAL(10,2)", name = "valor_pago", nullable = false)
     private Double valorPago;
 
-    @Column(name = "valor_estornado", nullable = false)
+    @Column(columnDefinition = "DECIMAL(10,2)", name = "valor_estornado", nullable = false)
     private Double valorEstornado = 0.0;
 
     @Column(name = "data_cancelamento")

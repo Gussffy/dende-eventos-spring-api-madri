@@ -2,9 +2,17 @@ package br.com.softhouse.dende.model.enums;
 
 public enum Sexo {
 
-    MASCULINO, FEMININO, OUTRO;
+    M("Masculino"),
+    F("Feminino"),
+    O("Outro");
 
-    private String getDescricao(){
-        return this.name().toLowerCase();
-    };
+    private final String descricao;
+
+    Sexo(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
 }

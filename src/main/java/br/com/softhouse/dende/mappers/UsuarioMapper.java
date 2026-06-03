@@ -29,7 +29,7 @@ public class UsuarioMapper {
         dto.setNome(usuario.getNome());
         dto.setDataNascimento(usuario.getDataNascimento());
         dto.setIdade(usuario.getIdade());
-        dto.setSexo(usuario.getSexo());
+        dto.setSexo(usuario.getSexo() != null ? usuario.getSexo().getDescricao() : null);
         dto.setEmail(usuario.getEmail());
         dto.setAtivo(usuario.getAtivo());
         return dto;

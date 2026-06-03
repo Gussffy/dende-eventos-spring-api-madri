@@ -59,13 +59,13 @@ public class Evento {
     @Column(name = "capacidade_maxima", nullable = false)
     private Integer capacidadeMaxima;
 
-    @Column(name = "preco_ingresso", nullable = false)
+    @Column(columnDefinition = "DECIMAL(10,2)", name = "preco_ingresso", nullable = false)
     private Double precoIngresso;
 
     @Column(name = "estorna_ingresso", nullable = false)
     private Boolean estornaCancelamento = true;
 
-    @Column(name = "taxa_estorno", nullable = false)
+    @Column(columnDefinition = "DECIMAL(10,2)", name = "taxa_estorno", nullable = false)
     private Double taxaEstorno = 0.0;
 
     @Column(nullable = false)
