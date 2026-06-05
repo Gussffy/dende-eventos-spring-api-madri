@@ -31,7 +31,7 @@ public class OrganizadorMapper {
         dto.setNome(organizador.getNome());
         dto.setDataNascimento(organizador.getDataNascimento());
         dto.setIdade(organizador.getIdade());
-        dto.setSexo(organizador.getSexo());
+        dto.setSexo(organizador.getSexo() != null ? organizador.getSexo().getDescricao() : null);
         dto.setEmail(organizador.getEmail());
         dto.setAtivo(organizador.getAtivo());
         if (empresa != null) {

@@ -1,6 +1,5 @@
 package br.com.softhouse.dende.dto.response;
 
-import br.com.softhouse.dende.model.enums.Sexo;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -14,7 +13,7 @@ public class OrganizadorResponseDTO {
     private String nome;
     private LocalDate dataNascimento;
     private String idade;
-    private Sexo sexo;
+    private String sexo; // agora retorna a descrição completa (e.g. "Masculino")
     private String email;
     private Boolean ativo;
     private String cnpj;
