@@ -1,6 +1,6 @@
 # 🌴 Dendê Eventos API
 
-API REST para gerenciamento de usuários, organizadores, eventos e ingressos da plataforma **Dendê Eventos**, desenvolvida com **Spring Boot 3**, **Spring Data JPA**, **Flyway** e **MySQL**.
+API REST para gerenciamento de usuários, organizadores, eventos e ingressos da plataforma **Dendê Eventos**, desenvolvida com **Spring Boot 4**, **Spring Data JPA**, **Flyway**, **Docker** e **MySQL**.
 
 ---
 
@@ -287,3 +287,4 @@ PRESENCIAL, REMOTO, HIBRIDO
 ```
 ATIVO, PENDENTE, CANCELADO, REEMBOLSADO, UTILIZADO
 ```
+---
